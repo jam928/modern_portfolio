@@ -1,5 +1,6 @@
 // COMMAND NPM RUN SASS
 @import 'config';
+@import 'menu';
 * {
   box-sizing: border-box;
 }
@@ -19,7 +20,7 @@ h2,
 h3 {
   margin: 0;
   font-weight: 400;
-
+  
   &.lg-heading {
     font-size: 6rem;
   }
