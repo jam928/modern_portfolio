@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', init);
 // Init app
 function init() {
     const txtElement = document.querySelector('.txt-type');
-    const words = JSON.parse(txtElement.getAttribute('data-words'));
+    const words = ["Web Developer", "Full Stack Programmer", "Creator"];
     const wait = txtElement.getAttribute('data-wait');
 
     // init typewriter
