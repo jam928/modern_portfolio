@@ -164,6 +164,11 @@ main {
   }
 }
 
+/* cursor */
+.txt-type > .txt {
+  border-right: 0.2rem solid #777;
+}
+
 .btn-dark {
   @extend .btn;
   background: darken($primary-color, 50);
