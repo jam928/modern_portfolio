@@ -8,11 +8,10 @@
 // Desktops & Laptop
 @include mediaLg {
     .projects {
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(2,1fr);
     }
 
     main {
-
         .lg-heading {
             font-size: 5rem;
         }
@@ -21,8 +20,6 @@
 
 // Tablets & Small Laptops
 @include mediaMd {
-    
-
     main {
         align-items: center;
         text-align: center;
@@ -57,12 +54,6 @@
         transform: translate3d(100%, 0, 0);
     }
 
-    // .portrait {
-    //     background: url('../img/portrait_small.jpg');
-    //     width: 150px;
-    //     height: 150px;
-    // }
-
     .about-info {
         grid-template-areas:
         'bioimage'
@@ -73,8 +64,33 @@
         grid-template-columns: 1fr;
     }
 
+    .job-description {
+        ul {
+            list-style-type: none;
+            text-align: left;
+            margin: 0;
+            padding: inherit;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    }
+    .relevant-coursework {
+        ul {
+            list-style-type: none;
+            text-align: left;
+        }
+    }
+
     .projects {
         grid-template-columns: repeat(2,1fr);
+    }
+
+    .skills {
+        ul {
+            list-style-type: none;
+            text-align: left;
+        }
     }
 }
 
@@ -90,7 +106,38 @@
         }
     }
 
-    .projects {
+    .about-info {
+        grid-template-areas:
+        'bioimage'
+        'bio'
+        'job1'
+        'job2'
+        'job3';
         grid-template-columns: 1fr;
+    }
+
+    .job-description {
+        ul {
+            list-style-type: none;
+            text-align: left;
+            margin: 0;
+            padding: inherit;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    }
+    .relevant-coursework {
+        ul {
+            list-style-type: none;
+            text-align: left;
+        }
+    }
+
+    .skills {
+        ul {
+            list-style-type: none;
+            text-align: left;
+        }
     }
 }

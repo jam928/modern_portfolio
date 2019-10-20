@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', init);
 // Init app
 function init() {
     const txtElement = document.querySelector('.txt-type');
-    const words = ["Web Developer", "Full Stack Programmer", "Creator"];
+    const words = ["Backend Developer", "Full Stack Programmer", "Java Programmer"];
     const wait = txtElement.getAttribute('data-wait');
 
     // init typewriter
@@ -81,7 +81,7 @@ class TypeWriter {
         this.txtElement.innerHTML = `<span class = "txt">${this.txt}</span>`;
     
         // Initial Type speed
-        let typeSpeed = 300;
+        let typeSpeed = 200;
     
         if(this.isDeleting) {
             typeSpeed /= 2;
@@ -101,10 +101,8 @@ class TypeWriter {
             this.wordIndex++;
     
             // pause before its start typing
-            this.typeSpeed = 500;
+            this.typeSpeed = 300;
         }
         setTimeout(() => this.type(), typeSpeed);
     }
-    
-    
 }
