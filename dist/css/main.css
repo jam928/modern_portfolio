@@ -311,4 +311,6 @@ main {
     text-align: left; }
   .skills ul {
     list-style-type: none;
-    text-align: left; } }
+    text-align: left; }
+  .projects {
+    display: block; } }
